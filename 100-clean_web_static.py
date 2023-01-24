@@ -2,7 +2,9 @@
 """A module for web application deployment with Fabric."""
 from fabric.api import env, run
 
+
 env.hosts = ['<52.3.41.70 web-01>', '<52.86.37.174 web-02>']
+
 
 def do_clean(number=0):
     if number == 0:
